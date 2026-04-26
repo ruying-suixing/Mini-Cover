@@ -15,10 +15,10 @@
       <span>友善</span>
     </div>
     <div class="mt-2 space-x-2">
-      <span>© 2024</span>
+      <span>© 2026</span>
       <a href="https://bsgun.cn" 
          target="_blank"
-         class="font-bold text-green-600 hover:text-gray-600 transition-colors">梦爱吃鱼</a>
+         class="font-bold text-green-600 hover:text-gray-600 transition-colors">如影随形</a>
       <a v-if="icpNumber" 
          href="https://beian.miit.gov.cn/" 
          target="_blank"

@@ -6,12 +6,13 @@ const fonts = [
     ['yozai', '悠哉字体', 'https://chinese-fonts-cdn.deno.dev/packages/yozai/dist/Yozai-Regular/result.css'],
     ['寒蝉全圆体', '寒蝉全圆体', 'https://chinese-fonts-cdn.deno.dev/packages/hcqyt/dist/ChillRoundFRegular/result.css'],
     ['Douyin Sans', '抖音美好体', 'https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css'],
-    ['MaokenZhuyuanTi', '猫啃珠圆体', 'https://chinese-fonts-cdn.deno.dev/packages/mkzyt/dist/猫啃珠圆体/result.css']
+    ['MaokenZhuyuanTi', '猫啃珠圆体', 'https://chinese-fonts-cdn.deno.dev/packages/mkzyt/dist/猫啃珠圆体/result.css'],
+    ['LXGW-Bright-Medium', '霞鹜文楷', 'https://oss-cdn.bsgun.cn/fonts/LXGW-Bright-Medium/font.css']
 ];
 
 export const defaultConfig = {
-    text: '梦爱吃鱼',       // 默认文本
-    watermark: '@梦爱吃鱼', // 默认水印
+    text: '如形の小站',       // 默认文本
+    watermark: '@如影随形', // 默认水印
     fontFamily: import.meta.env.VITE_APP_FONT_FAMILY,
     fontStyles: fonts.map(f => f[2]).filter(Boolean),
     fontOptions: fonts.map(([value, label]) => ({ value, label }))

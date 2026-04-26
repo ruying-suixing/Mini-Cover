@@ -36,7 +36,7 @@
              @click.stop
         >
           <div class="flex justify-between items-center mb-4">
-            <h3 class="text-lg font-medium">设置</h3>
+            <h3 class="text-lg font-medium">关于</h3>
             <button @click="$emit('update:modelValue', false)"
                     class="p-1 hover:bg-gray-100 rounded-full transition-colors">
               <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -53,7 +53,12 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
                     d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
             </svg>
-            <p class="text-sm">设置内容待添加</p>
+            <hr class="my-6 w-full border-gray-300">
+            <p class="text-sm">需要一个<strong>自己的</strong>图片生成器？去 <a href="https://github.com/ruying-suixing/mini-cover" class="text-blue-500 hover:text-blue-600" "target="_blank">Github 仓库</a>看看吧！</p>
+            <p class="text-sm mt-2">如果你喜欢，欢迎点个⭐️！如果你有任何建议，欢迎提交 <a href="https://github.com/ruying-suixing/mini-cover/issues" class="text-blue-500 hover:text-blue-600" "target="_blank">Issue</a>。</p>
+            <br>
+            <p class="text-sm">支持<b>多行</b>标题哦~</p>
+            <p class="text-sm">上传背景图片和背景颜色只能<b>选其一</b></p>
           </div>
         </div>
       </Transition>
