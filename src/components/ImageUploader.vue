@@ -59,12 +59,16 @@ export default {
         formData.append('file', blob, 'Canvas-Ruom.webp');
 
         const apiUrl = this.uploadApiUrl + '?uploadChannel=huggingface';
+        const apikey = import.meta.env.VITE_APP_UPLOAD_APIKEY;
 
         fetch(apiUrl, {
           method: 'POST',
           body: formData,
           mode: 'cors',
-          credentials: 'omit'
+          credentials: 'omit',
+          headers: {
+            'Authorization': apikey
+          }
         })
           .then(res => {
             if (!res.ok) throw new Error('请求异常');
